@@ -5,6 +5,7 @@ import { fontSize, fontWeight } from "./typography.css";
 import { borderRadius, borderSize, shadows } from "./border.css";
 import { mediaSize, position, size, space } from "./size.css";
 import palette from "./colors.css";
+import { angle, colorStop, gradient } from "./gradient.css";
 
 const responsiveProperties = defineProperties({
   conditions: {
@@ -49,8 +50,39 @@ const responsiveProperties = defineProperties({
       "stretch",
     ],
     justifySelf: ["auto", "flex-start", "flex-end", "center", "stretch"],
-    gridTemplateColumns: ["none", "auto", "initial", "inherit"],
-    gridTemplateRows: ["none", "auto", "initial", "inherit"],
+    gridTemplateColumns: [
+      "auto",
+      "initial",
+      "inherit",
+      "repeat(2, minmax(0, 1fr))",
+      "repeat(3, minmax(0, 1fr))",
+      "repeat(4, minmax(0, 1fr))",
+      "repeat(5, minmax(0, 1fr))",
+      "repeat(6, minmax(0, 1fr))",
+      "repeat(7, minmax(0, 1fr))",
+      "repeat(8, minmax(0, 1fr))",
+      "repeat(9, minmax(0, 1fr))",
+      "repeat(10, minmax(0, 1fr))",
+      "repeat(11, minmax(0, 1fr))",
+      "repeat(12, minmax(0, 1fr))",
+    ],
+
+    gridTemplateRows: [
+      "auto",
+      "initial",
+      "inherit",
+      "repeat(2, minmax(0, 1fr))",
+      "repeat(3, minmax(0, 1fr))",
+      "repeat(4, minmax(0, 1fr))",
+      "repeat(5, minmax(0, 1fr))",
+      "repeat(6, minmax(0, 1fr))",
+      "repeat(7, minmax(0, 1fr))",
+      "repeat(8, minmax(0, 1fr))",
+      "repeat(9, minmax(0, 1fr))",
+      "repeat(10, minmax(0, 1fr))",
+      "repeat(11, minmax(0, 1fr))",
+      "repeat(12, minmax(0, 1fr))",
+    ],
     gridTemplateAreas: ["none", "auto", "initial", "inherit"],
     gridAutoColumns: ["auto", "initial", "inherit"],
     gridAutoRows: ["auto", "initial", "inherit"],
@@ -122,6 +154,46 @@ const systemProperties = defineProperties({
   properties: {
     color: palette,
     backgroundColor: palette,
+    backgroundImage: [
+      `linear-gradient(to bottom, ${palette["red-100"]}, ${palette["green-700"]})`,
+    ],
+    backgroundOpacity: ["0", "25", "50", "75", "100"],
+    backgroundPosition: [
+      "bottom",
+      "center",
+      "left",
+      "left-bottom",
+      "left-top",
+      "right",
+      "right-bottom",
+      "right-top",
+      "top",
+    ],
+    backgroundSize: ["auto", "cover", "contain"],
+    backgroundRepeat: [
+      "repeat",
+      "no-repeat",
+      "repeat-x",
+      "repeat-y",
+      "round",
+      "space",
+    ],
+    backgroundAttachment: ["fixed", "local", "scroll"],
+    borderCollapse: ["collapse", "separate"],
+    tableLayout: ["auto", "fixed"],
+    objectFit: ["contain", "cover", "fill", "none", "scale-down"],
+    objectPosition: [
+      "bottom",
+      "center",
+      "left",
+      "left-bottom",
+      "left-top",
+      "right",
+      "right-bottom",
+      "right-top",
+      "top",
+    ],
+
     borderColor: palette,
     borderRadius: borderRadius,
     borderWidth: borderSize,
@@ -136,6 +208,7 @@ const systemProperties = defineProperties({
       "move",
       "not-allowed",
     ],
+
     pointerEvents: ["auto", "none"],
     userSelect: ["auto", "none", "text", "all", "contain"],
 

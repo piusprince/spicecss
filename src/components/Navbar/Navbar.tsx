@@ -5,7 +5,7 @@ export default function Navbar() {
   return (
     <div
       className={spice({
-        backgroundColor: "green-400",
+        backgroundColor: "gray-100",
         width: "full",
         height: "size-9",
         display: "flex",

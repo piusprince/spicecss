@@ -1,2 +1,2 @@
 # spicecss
- A typesafe css utility library built with vanilla extract
+Building a webpage using a custom built type safe utility css framework

@@ -14,6 +14,7 @@ export const borderRadius = {
 };
 
 export const borderSize = {
+  "border-0": "0rem",
   "border-1": "0.1rem",
   "border-2": "0.2rem",
   "border-3": "0.3rem",

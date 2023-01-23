@@ -31,7 +31,7 @@ export default function Hero() {
         ></div>
         <div
           className={spice({
-            backgroundColor: "red-200",
+            backgroundColor: "purple-700",
             width: "size-15",
           })}
         ></div>
